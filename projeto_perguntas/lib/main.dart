@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 main() => runApp(new PerguntaApp());
 
 class PerguntaAppState extends State<PerguntaApp> {
+  
   var perguntaSelecionada = 0;
+
   void responder() {
     perguntaSelecionada++;
-    print('Pergunta respondida!');
+    print('Pergunta respondida!' + perguntaSelecionada.toString() );
   }
 
   @override
